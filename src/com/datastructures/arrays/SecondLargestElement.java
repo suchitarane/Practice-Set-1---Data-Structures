@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class SecondLargestElement {
 	public static int getSecondLargest(int[] a, int total) {
-		Arrays.sort(a);//Arrays.sort() function uses Merge Sort -<O(nlogn) 
+		Arrays.sort(a);
 		return a[total - 2];
 	}
 
