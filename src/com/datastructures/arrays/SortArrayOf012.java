@@ -9,14 +9,14 @@ public static void main(String[] args) {
         int[] a = {0, 1, 1, 0, 1, 2, 1, 2, 0, 0, 0, 1};  
         radix_sort(a);    
         System.out.print("\n The sorted array is: \n");  
-        for(i=0;i<10;i++)  
+        for(i=0;i<a.length;i++)  
             System.out.print(a[i]);  
     }
 
 	static int largest(int a[])  
     {     
         int larger=a[0], i;   
-        for(i=1;i<10;i++)  
+        for(i=1;i<a.length;i++)  
         {  
             if(a[i]>larger)  
             larger = a[i];  
@@ -39,7 +39,8 @@ public static void main(String[] args) {
         {  
             for(i=0;i<10;i++)  
             bucket_count[i]=0;  
-            for(i=0;i<10;i++)  
+            
+            for(i=0;i<a.length;i++)  
             {  
                 // sort the numbers according to the digit at passth place            
                 remainder = (a[i]/divisor)%10;  
